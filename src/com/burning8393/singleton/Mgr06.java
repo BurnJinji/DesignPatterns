@@ -9,7 +9,7 @@ import java.util.concurrent.TimeUnit;
  * 可以通过synchronized解决，但也带来了效率下降
  */
 public class Mgr06 {
-    private static Mgr06 INSTANCE;
+    private static volatile Mgr06 INSTANCE;
 
     private Mgr06() {
     }
