@@ -1,18 +1,19 @@
 package com.burning8393.observer.v9;
 
+import java.awt.*;
 import java.util.ArrayList;
 import java.util.List;
 
 public class Test {
     public static void main(String[] args) {
-        Button button = new Button();
+        Button1 button = new Button1();
         button.addActionListener(new MyActionListener());
         button.addActionListener(new MyActionListener2());
         button.buttonPressed();
     }
 }
 
-class Button {
+class Button1 {
     private List<ActionListener> listeners = new ArrayList<>();
 
     public void addActionListener(ActionListener listener) {
