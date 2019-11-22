@@ -13,11 +13,12 @@ public class Tank implements Moveable {
     public void move() {
         System.out.println("tank kalakala...");
         try {
-            Thread.sleep(new Random().nextInt(1000));
+            Thread.sleep(new Random().nextInt(10000));
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
     }
+
 }
 
 interface Moveable {
